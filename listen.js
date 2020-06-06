@@ -34,7 +34,8 @@ const http = require("http");
           console.log("Received url: " + url);
 
           try {
-            const verifyFp = await signer.getVerifyFp();
+            //const verifyFp = await signer.getVerifyFp();
+            const verifyFp = "test";
             const token = await signer.sign(url);
             let output = JSON.stringify({
               signature: token,
